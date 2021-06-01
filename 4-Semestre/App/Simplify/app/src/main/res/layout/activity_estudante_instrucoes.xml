@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorBackground"
+
+    tools:context=".estudante.EstudanteInstrucoes">
+
+    <ScrollView
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/txtAtencao"
+            android:textAlignment="textStart"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSeconday"
+            android:id="@+id/tv_nome"
+            ></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/v_linha"
+                ></View>
+        </LinearLayout>
+        </ScrollView>
+
+    <ScrollView
+        style="@android:style/Widget.Holo.ScrollView"
+        android:layout_width="350dp"
+        android:layout_height="405dp"
+        android:layout_marginTop="0dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="@string/titleInstrucoes"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/tv_instrucoes1"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_instrucoes2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="@string/txtInstrucoes"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"></TextView>
+
+            <Button
+                android:id="@+id/btnProsseguir"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/txtProsseguir"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/textColor"
+                android:drawableRight="@drawable/prosseguir"
+                android:drawablePadding="200dp"
+                android:onClick="navegarUpload"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_saida"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:src="@drawable/saida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:onClick="logOut"
+        ></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

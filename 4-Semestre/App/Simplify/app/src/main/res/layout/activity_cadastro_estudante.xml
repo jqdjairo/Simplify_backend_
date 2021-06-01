@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".estudante.CadastroEstudante">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_cadastro"
+        android:scaleType="center"
+        />
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#00ffffff"
+        android:onClick="back"
+        android:text="Voltar"
+        android:textColor="@color/textColor"
+        app:icon="@drawable/back"
+        app:cornerRadius="5sp"
+        app:iconPadding="1sp"
+        app:iconSize="30sp"
+        app:iconTint="@color/textColor"
+        app:layout_constraintHorizontal_bias="0.02"
+        android:strokeColor="#05FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/txtBemVindo"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingBottom="40dp"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="4dp"
+            android:textColor="@color/textColor"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Digite seu nome completo"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/edtNomecad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="text"
+            android:textColor="@color/textColor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="4dp"
+            android:textColor="@color/textColor"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Digite Seu email"
+            ></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtmail"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="4dp"
+            android:textColor="@color/textColor"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Digite sua senha"
+            ></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtsenhacad"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="textPassword"
+            android:textColor="@color/textColor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:padding="4dp"
+            android:textColor="@color/textColor"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Envie sua foto"
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#fff"
+            android:layout_height="80dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/black"
+            android:text="Cadastrar"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:onClick="cadastra"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
